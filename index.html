@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <label class="lab-first">Prvi broj:</label>
+        <br>
+        <input id="broj1" type="text" value="0">
+        <br>
+        <label class="lab-sec">Drugi broj:</label>
+        <br>
+        <input id="broj2" type="text" value="0">
+        <br>
+        <!-- Iznad su polja za unos prva dva broja-->
+        <label class="lab-op" for="operators">
+            Izaberi računsku operaciju<br>iz padajućeg menija:
+        </label>
+        <br>
+        <select id="operators" size="1">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <br>
+        <!-- Iznad je kod za padajuci meni sa operacijama-->
+        <label class="lab-res">Pritisni "="</label>
+        <br>
+
+        <input id="button" type="button" value="=" onclick="calc()">
+        <input id="result" type="text" value="0">
+        <!-- Kod za dugme(=) i za rezultat -->
+    </div>
+
+    <script>
+
+        function calc() {
+            var broj1 = parseFloat(document.getElementById("broj1").value);
+            var broj2 = parseFloat(document.getElementById("broj2").value);
+            var oper = document.getElementById("operators").value;
+
+            if (oper === "+") {
+                document.getElementById("result").value = broj1 + broj2;
+            }
+            if (oper === "-") {
+                document.getElementById("result").value = broj1 - broj2;
+            }
+            if (oper === "*") {
+                document.getElementById("result").value = broj1 * broj2;
+            }
+            if (oper === "/") {
+                document.getElementById("result").value = broj1 / broj2;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

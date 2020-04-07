@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    background: linear-gradient(to right, rgb(158, 65, 65), rgb(187, 98, 57));
+    margin:50px auto;
+}
+
+div {
+    margin: 100px auto;
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(to right, rgb(112, 43, 43), rgb(150, 75, 41));
+
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 50px;
+}
+
+label, input, select{
+    margin: 10px;
+}
+
+input, select {
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.lab-first, .lab-sec{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.lab-op, .lab-res {
+    font-style: italic;
+    font-size: 40px;
+    
+}
+
+input{
+    height: 40px;
+    width: 200px;
+    background-color: bisque;
+    padding: 0px 7px 0px 7px;
+    font-size: 25px;
+}
+
+select{
+    background-color: rgb(167, 131, 87);
+    width: 50px;
+    padding-left: 10px;
+}
+
+#button{
+    width: 40px;
+    background-color:rgb(151, 101, 39) ;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+
+
+
